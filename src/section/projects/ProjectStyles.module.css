@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .projectsContainer {
+    
+        .project img {
+            max-width: 250px;
+            max-height: 250px;
+            align-self: center;
+            background-color: var(--project-card-bg);
+            border-radius: 20px;
+        }
+    }
+}
