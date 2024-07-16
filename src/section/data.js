@@ -1,4 +1,6 @@
 import SocialMedia from "../assets/SocialMedia.png"
+import BloggingApp from "../assets/BloggingApp.png"
+import FoodieLogo from "../assets/FoodieLogo.png"
 
 //Hero section details
 
@@ -13,9 +15,40 @@ export const objective = "Passionate full-stack developer skilled in React, Node
 export const projects = [
     {
         id: 1,
+        title: "Foodie's Hub",
+        image: FoodieLogo,
+        desc: "A Food app UI prototype which build with React JS, Redux Toolkit and Tailwind CSS",
+        link: "https://food-app-prototype-arif-basha-ks-projects.vercel.app/"
+    },
+    {
+        id: 2,
+        title: "GetBlogs.com",
+        image: BloggingApp,
+        desc: "A full-stack Blogging app which build with React JS, SASS, Node JS, Express and MySQL",
+        link: "https://vibes-com.onrender.com"
+    },
+    {
+        id: 3,
         title: "Vibes.com",
         image: SocialMedia,
         desc: "A Social-media app which build with React JS, Node JS, Express, MongoDB and MaterialUI",
-        link: ""
+        link: "https://vibes-com.onrender.com"
     },
+    // {
+    //     id: 4,
+    //     title: "GetBlogs.com",
+    //     image: BloggingApp,
+    //     desc: "A full-stack Blogging app which build with React JS, SASS, Node JS, Express and MySQL",
+    //     link: "https://vibes-com.onrender.com"
+    // },
+    // {
+    //     id: 5,
+    //     title: "Vibes.com",
+    //     image: SocialMedia,
+    //     desc: "A Social-media app which build with React JS, Node JS, Express, MongoDB and MaterialUI",
+    //     link: "https://vibes-com.onrender.com"
+    // },
 ]
+
+//Projects Section details
+

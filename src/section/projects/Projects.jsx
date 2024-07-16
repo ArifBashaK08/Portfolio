@@ -1,23 +1,27 @@
 import { projects } from "../data";
 import styles from "./ProjectStyles.module.css";
+import ProjectCard from "../../common/ProjectCard";
+
+
 
 const Projects = () => {
-    return (
-        <section id="projects" className={styles.container}>
-            <h1 className="sectionTitle">Projects</h1>
-            <div className={styles.projectsContainer}>
-                {projects.map(project => (
-                    <div className={styles.project} key={project.id}>
-                        <img src={project.image} alt="Vibes.com" className={styles.hover} />
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <h3>{project.title}</h3>
-                        </a>
-                        <p>{project.desc}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+
+ 
+
+  return (
+    <section id="projects" className={styles.container}>
+      <h1 className="sectionTitle">Projects</h1>
+        <div className={styles.projectsContainer}>
+          {projects.map(({ id, image, link, title, desc }) => {
+            return (
+              <div className={styles.project} key={id}>
+                <ProjectCard image={image} title={title} link={link} desc={desc} />
+              </div>
+            );
+          })}
+        </div>
+    </section>
+  );
 };
 
 export default Projects;

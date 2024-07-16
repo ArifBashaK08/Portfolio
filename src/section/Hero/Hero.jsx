@@ -1,7 +1,7 @@
 import style from './HeroStyle.module.css';
 import heroImg from "../../assets/hero-img.jpg"
 import { FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa";
-import Resume from "../../assets/Resume.pdf"
+import Resume from "../../assets/ArifBashaK.pdf"
 import { useTheme } from "../../common/ThemeContext"
 
 
@@ -9,7 +9,7 @@ const Hero = ({ name, role, gitHub, linkedIn, objective }) => {
 
   const { theme, toggleTheme } = useTheme()
 
-  const themeIcon = theme === "light" ? <FaSun size={30} onClick={toggleTheme} className='colorMode' /> : <FaMoon size={30} onClick={toggleTheme} className='colorMode' fill='white' />
+  const themeIcon = theme === "light" ? <FaSun size={30} onClick={toggleTheme} className={style.colorMode} /> : <FaMoon size={25} onClick={toggleTheme} className={style.colorMode} fill='white' />
 
   return (
     <section id="hero" className={style.container}>
