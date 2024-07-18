@@ -22,10 +22,10 @@ export const projects = [
     },
     {
         id: 2,
-        title: "GetBlogs.com",
+        title: "Blogger.com",
         image: BloggingApp,
-        desc: "A full-stack Blogging app which build with React JS, SASS, Node JS, Express and MySQL",
-        link: "https://vibes-com.onrender.com"
+        desc: "A full-stack Blogging app which build with Server-side Rendering using eJs, Bootstrap CSS, Node JS, Express and MongoDB",
+        link: "https://blogging-app-uyxc.onrender.com"
     },
     {
         id: 3,
